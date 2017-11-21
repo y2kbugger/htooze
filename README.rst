@@ -10,13 +10,13 @@ https://docs.pipenv.org/
 
 Install pipenv using::
 
-    pip install pipenv
+    $ pip install pipenv
 
 
 Then clone the repo and install package + deps + dev-deps::
 
-    $ git clone git@bitbucket.org:y2kbugger/htooze.git
-    $ cd htooze
+    $ git clone git@bitbucket.org:y2kbugger/HTooze.git
+    $ cd HTooze
     $ pipenv install --dev
 
 The pytest suite can then be ran via::
@@ -26,6 +26,6 @@ The pytest suite can then be ran via::
 or::
 
     $ pipenv shell
-    (htooze) $ pytest
+    (HTooze)$ pytest
 
     
