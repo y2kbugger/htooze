@@ -1,18 +1,18 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a28e60d6ec10434b5d5c40b6c3d799a45286fc0c6af7e2f5000aa77058933889"
+            "sha256": "3d1a8c8967988abf4ad8f581a5316e77c951ea719894c2ad7a330765f06d3b4d"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
-            "implementation_version": "3.6.3",
+            "implementation_version": "3.6.2",
             "os_name": "posix",
-            "platform_machine": "aarch64",
+            "platform_machine": "x86_64",
             "platform_python_implementation": "CPython",
-            "platform_release": "3.10.73-g79df07b459c",
+            "platform_release": "4.9.56-1-lts",
             "platform_system": "Linux",
-            "platform_version": "#1 SMP PREEMPT Fri Sep 15 20:29:13 UTC 2017",
-            "python_full_version": "3.6.3",
+            "platform_version": "#1 SMP Thu Oct 12 22:34:15 CEST 2017",
+            "python_full_version": "3.6.2",
             "python_version": "3.6",
             "sys_platform": "linux"
         },
@@ -26,7 +26,12 @@
             }
         ]
     },
-    "default": {},
+    "default": {
+        "tzwvpety": {
+            "editable": true,
+            "path": "."
+        }
+    },
     "develop": {
         "py": {
             "hashes": [
