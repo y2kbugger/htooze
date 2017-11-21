@@ -2,11 +2,30 @@
 htwarfare
 ===========
 
-Using the new standard pipenv to manage virtual environments rather than virtualenvwrapper
+venvs are managed by the new standard pipenv to manage virtual environments
+rather than virtualenvwrapper. Read more here:
+
 http://docs.python-guide.org/en/latest/dev/virtualenvs/
 https://docs.pipenv.org/
+
 Install pipenv using::
 
-    pip install --user pipenv
+    pip install pipenv
+
+
+Then clone the repo and install package + deps + dev-deps::
+
+    $ git clone git@bitbucket.org:y2kbugger/htwarfare.git
+    $ cd htwarfare
+    $ pipenv install --dev
+
+The pytest suite can then be ran via::
+
+    $ pipenv run pytest
+
+or::
+
+    $ pipenv shell
+    (htwarfare) $ pytest
 
     
