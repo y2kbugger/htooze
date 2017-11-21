@@ -12,7 +12,7 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='htwarfare',
+    name='htooze',
     version='0.1.0',
     description='An http based game',
     long_description=readme,

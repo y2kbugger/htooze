@@ -1,5 +1,5 @@
 ===========
-htwarfare
+htooze
 ===========
 
 venvs are managed by the new standard pipenv to manage virtual environments
@@ -15,8 +15,8 @@ Install pipenv using::
 
 Then clone the repo and install package + deps + dev-deps::
 
-    $ git clone git@bitbucket.org:y2kbugger/htwarfare.git
-    $ cd htwarfare
+    $ git clone git@bitbucket.org:y2kbugger/htooze.git
+    $ cd htooze
     $ pipenv install --dev
 
 The pytest suite can then be ran via::
@@ -26,6 +26,6 @@ The pytest suite can then be ran via::
 or::
 
     $ pipenv shell
-    (htwarfare) $ pytest
+    (htooze) $ pytest
 
     
