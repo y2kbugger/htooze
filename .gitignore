@@ -1,1 +1,5 @@
-htooze.egg-info
+__pycache__
+*.egg-info
+*.pyc
+**/__pycache__
+.cache
