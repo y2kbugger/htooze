@@ -19,7 +19,7 @@ https://docs.pipenv.org/
 
 Install pipenv using::
 
-    $ pip install pipenv
+    $ pacman -Syyu python-pipenv
 
 Then clone the repo and install package + deps + dev-deps::
 
@@ -33,11 +33,9 @@ Testing
 
 The pytest suite can then be ran via::
 
-    $ pipenv run pytest
+    $ pipenv run pytest -f
 
 or::
 
     $ pipenv shell
-    (HTooze)$ pytest
-
-    
+    (HTooze)$ pytest -f
