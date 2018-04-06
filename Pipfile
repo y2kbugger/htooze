@@ -6,7 +6,10 @@ name = "pypi"
 
 
 [packages]
-"TzWvpETY" = {path = ".", editable = true} 
+
+tzwvpety = {path = ".", editable = true}
+pytest-xdist = "*"
+ipython = "*"
 
 
 [dev-packages]
