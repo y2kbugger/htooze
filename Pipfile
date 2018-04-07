@@ -8,10 +8,10 @@ name = "pypi"
 [packages]
 
 tzwvpety = {path = ".", editable = true}
-pytest-xdist = "*"
-ipython = "*"
 
 
 [dev-packages]
 
 pytest = "*"
+pytest-xdist = "*"
+ipython = "*"
