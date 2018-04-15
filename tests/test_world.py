@@ -1,8 +1,15 @@
+import pytest
 from htooze import world
 
 def test_planet_exists():
     p = world.Planet()
     assert isinstance(p, world.Planet)
+
+def test_planet_size_is_obeyed():
+    p = world.Planet((25, 25))
+    assert p.size == (25, 25)
+
+# note: add tests to check that x or y can't be 0 (teach raises)
 
 def test_life_can_exist():
     mycell = world.Cell()
@@ -23,6 +30,7 @@ def test_life_can_live_on_planet():
         assert isinstance(coords, tuple)
         assert int(coords[0]) == coords[0]
 
+@pytest.mark.skip(reason="Save this for later")
 def test_life_can_choose_motion():
     mycell = world.Cell()
     move = mycell.choose_move()
