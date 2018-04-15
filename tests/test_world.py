@@ -22,3 +22,10 @@ def test_life_can_live_on_planet():
         assert cell is mycell
         assert isinstance(coords, tuple)
         assert int(coords[0]) == coords[0]
+
+def test_life_can_choose_motion():
+    mycell = world.Cell()
+    move = mycell.choose_move()
+    assert int(move.axis) == move.axis
+    assert 0 <= move.axis < 2
+    assert int(move.distance) == move.distance
