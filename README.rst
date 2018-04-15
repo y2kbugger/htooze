@@ -39,3 +39,12 @@ or::
 
     $ pipenv shell
     (HTooze)$ pytest -f
+
+Cleaning
+--------
+
+In order to run tests with a clean environment it may be necessary to remove cache and other files:
+
+    $ git clean -idfx
+
+Type 1 to clean if you have verified that you don't need any of the files shown.
