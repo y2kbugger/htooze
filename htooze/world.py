@@ -3,7 +3,7 @@ import random
 class Planet():
     def __init__(self, size=(100, 100)):
         self.life = {}
-        self.size = (100, 100)
+        self.size = size
     def addcell(self, cell):
         ''' Add a cell to the planet at random position
 
