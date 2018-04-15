@@ -1,6 +1,0 @@
-[
-  "tests/test_world.py::test_planet_exists",
-  "tests/test_world.py::test_life_can_exist",
-  "tests/test_world.py::test_planet_starts_without_life",
-  "tests/test_world.py::test_life_can_live_on_planet"
-]
