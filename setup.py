@@ -19,5 +19,6 @@ setup(
     author='Zak Kohler',
     author_email='git@y2kbugger.com',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
-)
+    packages=find_packages(exclude=('tests', 'docs')),
+    scripts=['./htooze/bin/show_rand_map.py'],
+    )
