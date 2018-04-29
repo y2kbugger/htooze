@@ -9,7 +9,15 @@ def test_planet_size_is_obeyed():
     p = world.Planet((25, 25))
     assert p.size == (25, 25)
 
-# note: add tests to check that x or y can't be 0 (teach raises)
+@pytest.mark.skip("later, last solution needs work")
+@pytest.mark.parametrize("x,y", [(0, 25), (25, 0), (0, 0)])
+def test_planet_must_not_have_zero_length_dimension(x, y):
+    """This lesson will have you learn how to raise custom Exceptions
+
+    When you receive input that doesn't make sense, let the caller know.
+    """
+    with pytest.raises(IndexError):
+        p = world.Planet((x, y))
 
 def test_life_can_exist():
     mycell = world.Cell()
@@ -33,6 +41,11 @@ def test_life_can_live_on_planet():
 def test_life_can_choose_motion():
     mycell = world.Cell()
     move = mycell.choose_move()
+    assert not isinstance(move, world.Cell), (
+        "Don't return self, trying creating a Move class with the needed"
+        " attributes. Return an object of this class."
+        )
+
     assert int(move.axis) == move.axis
     assert 0 <= move.axis < 2
     assert int(move.distance) == move.distance
