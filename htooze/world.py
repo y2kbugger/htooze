@@ -20,9 +20,13 @@ class Planet():
 
 class Cell():
     def __init__(self):
-        self.reach = 1
+        #self.reach = 1
+        pass
 
     def choose_move(self):
-        self.axis = random.randint(0,1)   
-        self.distance = self.reach
-        return self
+        return Move()
+
+class Move(): # Why are classes sometimes defined with parentheses and sometimes without?
+    def __init__(self, distance=1):
+        self.axis = random.randint(0,1)
+        self.distance = distance
