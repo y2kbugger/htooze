@@ -20,4 +20,9 @@ class Planet():
 
 class Cell():
     def __init__(self):
-        pass
+        self.reach = 1
+
+    def choose_move(self):
+        self.axis = random.randint(0,1)   
+        self.distance = self.reach
+        return self
