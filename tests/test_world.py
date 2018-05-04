@@ -9,14 +9,10 @@ def test_planet_size_is_obeyed():
     p = world.Planet((25, 25))
     assert p.size == (25, 25)
 
-@pytest.mark.skip("later, last solution needs work")
 @pytest.mark.parametrize("x,y", [(0, 25), (25, 0), (0, 0)])
 def test_planet_must_not_have_zero_length_dimension(x, y):
-    """This lesson will have you learn how to raise custom Exceptions
-
-    When you receive input that doesn't make sense, let the caller know.
-    """
-    with pytest.raises(IndexError):
+    """As a developer I want an exception to be raised when an invalid value is passed so that i can fix the code that passed the incorrect value."""
+    with pytest.raises(ValueError):
         p = world.Planet((x, y))
 
 def test_life_can_exist():
